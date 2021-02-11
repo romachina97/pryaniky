@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A598124A1E4CF27455A89B88 /* Pods_Pryaniky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8EDF2550D166FFDCF3326B /* Pods_Pryaniky.framework */; };
 		C17720EC25CAAB99008A7660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17720EB25CAAB99008A7660 /* AppDelegate.swift */; };
 		C17720EE25CAAB99008A7660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17720ED25CAAB99008A7660 /* ViewController.swift */; };
 		C17720F125CAAB99008A7660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17720EF25CAAB99008A7660 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA81732FF34FC4BBAA6AD3BD /* Pods-Pryaniky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pryaniky/Pods-Pryaniky.release.xcconfig"; sourceTree = "<group>"; };
 		C17720E825CAAB99008A7660 /* Pryaniky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pryaniky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17720EB25CAAB99008A7660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17720ED25CAAB99008A7660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		C17720F225CAAB9C008A7660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C17720F525CAAB9C008A7660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C17720F725CAAB9C008A7660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ECED6EA9B79002A49158BF /* Pods-Pryaniky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pryaniky/Pods-Pryaniky.debug.xcconfig"; sourceTree = "<group>"; };
+		FA8EDF2550D166FFDCF3326B /* Pods_Pryaniky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pryaniky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A598124A1E4CF27455A89B88 /* Pods_Pryaniky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542A2A9BBE4B3173185E9040 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECED6EA9B79002A49158BF /* Pods-Pryaniky.debug.xcconfig */,
+				AA81732FF34FC4BBAA6AD3BD /* Pods-Pryaniky.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C17720DF25CAAB99008A7660 = {
 			isa = PBXGroup;
 			children = (
 				C17720EA25CAAB99008A7660 /* Pryaniky */,
 				C17720E925CAAB99008A7660 /* Products */,
+				542A2A9BBE4B3173185E9040 /* Pods */,
+				E00136E2A3B20FD21D306695 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Pryaniky;
 			sourceTree = "<group>";
 		};
+		E00136E2A3B20FD21D306695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EDF2550D166FFDCF3326B /* Pods_Pryaniky.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C17720FA25CAAB9C008A7660 /* Build configuration list for PBXNativeTarget "Pryaniky" */;
 			buildPhases = (
+				A6BF800B70CC0392B0587DDA /* [CP] Check Pods Manifest.lock */,
 				C17720E425CAAB99008A7660 /* Sources */,
 				C17720E525CAAB99008A7660 /* Frameworks */,
 				C17720E625CAAB99008A7660 /* Resources */,
+				70E67EFF573D4159CF1A37B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70E67EFF573D4159CF1A37B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pryaniky/Pods-Pryaniky-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pryaniky/Pods-Pryaniky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BF800B70CC0392B0587DDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pryaniky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C17720E425CAAB99008A7660 /* Sources */ = {
@@ -278,15 +353,13 @@
 		};
 		C17720FB25CAAB9C008A7660 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5ECED6EA9B79002A49158BF /* Pods-Pryaniky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VG87UD23;
 				INFOPLIST_FILE = Pryaniky/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pryaniky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +369,13 @@
 		};
 		C17720FC25CAAB9C008A7660 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA81732FF34FC4BBAA6AD3BD /* Pods-Pryaniky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VG87UD23;
 				INFOPLIST_FILE = Pryaniky/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pryaniky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
